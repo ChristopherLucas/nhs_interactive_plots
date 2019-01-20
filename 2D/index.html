@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+      
+    <title>D3.JS : 2D SCATTERPLOT [rc]</title>
+      
+    <link rel="stylesheet" href="css/styles.css" charset="utf-8">
+    <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+
+    <div id="scatter2D">
+      
+        <div id="ui">
+            
+        <input type="button" name="origin" value="origin" onclick="backToOrigin()">
+        <select id="colorSelector" onchange="changeColors()">
+
+            <option value="colcode1" selected="selected">color1</option>
+            <option value="colcode2">color2</option>
+            <option value="colcode3">color3</option>
+            <option value="colcode4">color4</option>
+
+        </select>
+
+        <select id="radiusSelector" onchange="changeRadiuses()">
+
+            <option value="circlesize1" selected="selected">radius1</option>
+            <option value="circlesize2">radius2</option>
+
+        </select>
+            
+        </div>
+      
+    </div>
+      
+        <div id="tooltip">
+        
+        <div class="audio">
+        <audio id="audio" controls>
+        <source src="audio/1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+        </audio>
+        </div>  
+        <div class="close" onclick="closeTooltip()">X</div>
+        <div id="info" class="text">{text}</div> 
+        
+    </div>
+      
+    <script src="js/scatter2d.js" charset="utf-8"></script>
+
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+      
+    <title>D3.JS|THREE.JS : 3D SCATTERPLOT [rc]</title>
+      
+    <meta name="description" content="Ehno based on D3.JS | THREE.JS stack.">
+    <meta name="keywords" content="HTML,CSS,CSV,JavaScript,D3.JS,THREE.JS">
+    <meta name="author" content="Vladimir V. KUCHINOV">
+      
+    <link rel="stylesheet" href="css/styles.css" charset="utf-8">
+    <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/98/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+
+  </head>
+  <body>
+      
+     <div id="ui">
+            
+        <input type="button" class="btn" name="origin" value="origin" onclick="backToOrigin()">
+
+        <input id="cntrl"  class="btn" type="button" name="rotate" value="rotate" onclick="switchControls('ui')">
+
+        <select id="colorSelector" class="btn" onchange="changeColors()">
+
+        </select>
+
+        <select id="radiusSelector" class="btn" onchange="changeRadiuses()">
+
+        </select>
+            
+    </div>
+      
+    <div id="scatter3D"></div>
+    <script src="js/scatter3d.js" charset="utf-8"></script>
+        
+    <div id="tooltip">
+
+        <div id="" class="clear"></div> 
+        <div class="close" onclick="closeTooltip()">X</div>
+        <div id="culture" class="culture">{culture}</div> 
+        <div id="text" class="text">{text}</div> 
+        <div id="lyric" class="lyric">{lyric}</div> 
+        <div id="cite_text" class="cite">{cite_text}</div> 
+        <div id="ocm" class="ocm">{ocm}</div> 
+
+    </div>
+      
+        <div id="culturesPopup">
+        <div id="closePopup" onclick="closePopup()">X</div>
+        <div>
+
+  </body>
+</html>
